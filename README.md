@@ -23,7 +23,7 @@ La app debe estar publicada en una dirección HTTPS; abrir `index.html` como arc
 - Importación y guardado local de archivos PDF y EPUB mediante el almacenamiento del navegador; permanecen en este dispositivo después de cerrar la app.
 - Muestra las portadas incluidas en EPUB y una miniatura de la primera página en PDF; si falta una portada, muestra una cubierta con el título.
 - PDF en el visor del navegador.
-- Lector EPUB inmersivo: oculta las barras de la app, muestra controles al tocar el centro y los oculta tras unos segundos. Permite cambiar de página tocando los bordes, elegir blanco, negro, sepia o pastel y ajustar el tamaño de letra.
+- Lector EPUB inmersivo: recuerda la última posición y el porcentaje leído en EPUB y PDF; oculta las barras de la app, muestra controles al tocar el centro y los oculta tras unos segundos. Permite cambiar de página tocando los bordes, elegir blanco, negro, sepia o pastel y ajustar el tamaño de letra.
 - EPUB paginado con controles de tamaño de letra.
 - Tema claro y oscuro.
 - Caché de la interfaz para abrir la app después de la primera visita sin conexión.
@@ -34,3 +34,4 @@ La app debe estar publicada en una dirección HTTPS; abrir `index.html` como arc
 - epub.js se carga desde jsDelivr; PDF.js y JSZip, desde cdnjs. La primera carga necesita conexión a internet. Las portadas PDF pueden usar la primera página del archivo; si PDF.js no está disponible, queda una cubierta genérica.
 - Los libros importados se guardan en el almacenamiento local del navegador, en este dispositivo. No se suben a un servidor ni se sincronizan entre dispositivos. Si borras los datos del navegador, se eliminan las copias locales.
 - Es una PWA; todavía no se generó una aplicación nativa APK para Android o IPA para iPhone.
+
