@@ -19,6 +19,7 @@ La app debe estar publicada en una dirección HTTPS; abrir `index.html` como arc
 ## Funciones
 
 - Inicio y biblioteca separados, con navegación inferior en pantallas pequeñas.
+- Explorar clásicos gratuitos en español desde Project Gutenberg; abrir su ficha oficial para consultar formatos y descargar.
 - Búsqueda y filtros por estado de lectura.
 - Importación y guardado local de archivos PDF y EPUB mediante el almacenamiento del navegador; permanecen en este dispositivo después de cerrar la app.
 - Muestra las portadas incluidas en EPUB y una miniatura de la primera página en PDF; si falta una portada, muestra una cubierta con el título.
@@ -31,6 +32,7 @@ La app debe estar publicada en una dirección HTTPS; abrir `index.html` como arc
 ## Requisitos y límites actuales
 
 - Se necesita HTTPS para instalar la PWA y usar el service worker.
+- El catálogo requiere conexión. Los derechos pueden variar según el país; comprueba la situación en tu ubicación.
 - epub.js se carga desde jsDelivr; PDF.js y JSZip, desde cdnjs. La primera carga necesita conexión a internet. Las portadas PDF pueden usar la primera página del archivo; si PDF.js no está disponible, queda una cubierta genérica.
 - Los libros importados se guardan en el almacenamiento local del navegador, en este dispositivo. No se suben a un servidor ni se sincronizan entre dispositivos. Si borras los datos del navegador, se eliminan las copias locales.
 - Es una PWA; todavía no se generó una aplicación nativa APK para Android o IPA para iPhone.
